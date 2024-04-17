@@ -1,16 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../img/logo_acciona.png"
 
 export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light bg-light">
-			<div className="container">
+			<div className="d-flex justify-content-between align-items-center w-100 px-3">
 				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+					<img className="navbar-brand mb-0 " src={Logo} style={{width: '10%'}}/>
 				</Link>
-				<div className="ml-auto">
+				<div className="">
 					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
+						<button className="btn ">Example button</button>
+					</Link>
+					<Link to="/single">
+						<button className="btn ">Another button</button>
 					</Link>
 				</div>
 			</div>
